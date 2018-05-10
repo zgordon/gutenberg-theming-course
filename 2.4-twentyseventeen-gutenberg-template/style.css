@@ -1,0 +1,61 @@
+/*
+Theme Name: 2.4 - Gutenberg Compatible Template
+Theme URI: https://gutenberg.courses/theming
+Description: Twenty Seventeen Child Theme. Adds a full and wide align supported "Full Width Template" available for posts and pages.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentyseventeen
+Text Domain: gutenbergtheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Make Page Wrapper Widths 100%
+2.0 Make Main Content Centered
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1.0 Make Page Wrapper Widths 100%
+--------------------------------------------------------------*/
+
+.post-template-page-full-width .entry-content {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  2.0 Make Main Content Centered
+  --------------------------------------------------------------*/
+  
+  .post-template-page-full-width .entry-header,
+  .post-template-page-full-width .entry-content > *:not( .alignwide ):not( .alignfull )  {
+    max-width: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .post-template-page-full-width .alignwide {
+    max-width: 75%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .post-template-page-full-width .alignfull {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  

@@ -1,0 +1,23 @@
+/*
+Theme Name: 2.2 Enqueuing CSS & JS
+Theme URI: https://gutenberg.courses/theming
+Description: A twentyseventeen Child Theme.  Provides examples of three ways to enqueue CSS and JS in a Gutenberg Compatible theme.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentyseventeen
+Text Domain: twentyseventeen-gutenberg
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Frontend Theme Styles
+--------------------------------------------------------------*/
+
+.navigation-top {
+  background: #ededed;
+}
