@@ -1,4 +1,4 @@
-# Theming for Gutenberg Course
+# Theming with Gutenberg Course
 
 ![Course Banner](https://cl.ly/rreK/cover-text.png)
 
