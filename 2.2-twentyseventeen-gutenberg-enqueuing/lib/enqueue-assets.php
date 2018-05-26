@@ -8,11 +8,15 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_theme_assets' );
  */
 function enqueue_theme_assets() {
 
-	// Enqueue Parent Theme Styles from twentyseventeen
 	wp_enqueue_style(
 		'parent-style',
-		get_template_directory_uri() . '/style.css',
-		[],
+		get_template_directory_uri() . '/style.css'
+	);
+
+	wp_enqueue_style(
+		'gbtheming-style',
+		get_stylesheet_uri(),
+		['parent-style'],
         time() // Change for production
 	);
 
@@ -22,9 +26,10 @@ function enqueue_theme_assets() {
 		[ 'jquery' ],
 		time() // Change for production
 	);
+
 }
 
-add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_assets' );
+// add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_assets' );
 /**
  * Enqueue theme CSS and JavaScript in Editor and Frontend.
  */
@@ -45,7 +50,7 @@ function enqueue_assets() {
 	);
 }
 
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
+// add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
 /**
  * Enqueue theme CSS and JavaScript in Editor only.
  */

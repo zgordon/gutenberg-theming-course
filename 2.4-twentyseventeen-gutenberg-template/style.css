@@ -1,7 +1,7 @@
 /*
 Theme Name: 2.4 - Gutenberg Compatible Template
-Theme URI: https://gutenberg.courses/theming
-Description: Twenty Seventeen Child Theme. Adds a full and wide align supported "Full Width Template" available for posts and pages.
+Theme URI: https://github.com/zgordon/gutenberg-theming-course
+Description: Twenty Seventeen Child Theme. Adds a full and wide align supported "Gutenberg Compatible Template" available for posts and pages.
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: twentyseventeen
@@ -14,16 +14,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 Make Page Wrapper Widths 100%
-2.0 Make Main Content Centered
+1.0 Apply 100% Width to Necessary Elements
+2.0 Apply Wide, Full and Default Align Styles
 --------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-1.0 Make Page Wrapper Widths 100%
+1.0 Apply 100% Width to Necessary Elements
 --------------------------------------------------------------*/
 
-.post-template-page-full-width .entry-content {
+.gutenberg-compatible-template .entry-content {
     max-width: 100%;
     width: 100%;
     float: none;
@@ -32,30 +32,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
   
   
-  /*--------------------------------------------------------------
-  2.0 Make Main Content Centered
-  --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 Apply Wide, Full and Default Align Styles
+--------------------------------------------------------------*/
   
-  .post-template-page-full-width .entry-header,
-  .post-template-page-full-width .entry-content > *:not( .alignwide ):not( .alignfull )  {
-    max-width: 50%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .post-template-page-full-width .alignwide {
-    max-width: 75%;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .post-template-page-full-width .alignfull {
-    max-width: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
+.gutenberg-compatible-template .entry-content > *,
+.gutenberg-compatible-template .entry-header,
+.gutenberg-compatible-template .page-header,
+.gutenberg-compatible-template .post-thumbnail,
+.gutenberg-compatible-template #comments  {
+  max-width: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gutenberg-compatible-template .alignwide {
+  max-width: 75%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gutenberg-compatible-template .alignfull {
+  width: 100%;
+  max-width: 100%;
+}
+
+.gutenberg-compatible-template .post-thumbnail img,
+.gutenberg-compatible-template .alignwide img,
+.gutenberg-compatible-template .alignfull img {
+  width: 100%;  
+}
