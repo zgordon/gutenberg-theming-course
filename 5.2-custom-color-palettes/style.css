@@ -1,0 +1,153 @@
+/*
+Theme Name: 5.2 - Custom Color Palettes
+Theme URI: https://github.com/zgordon/gutenberg-theming-course
+Description: A theme demonstrating how to add block templates to posts.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentyseventeen
+Text Domain: gutenbergtheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Apply 100% Width to Necessary Elements
+2.0 Apply Wide, Full and Default Align Styles
+3.0 Custom Color Palette Colors
+4.0 Media Queries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1.0 Apply 100% Width to Necessary Elements
+--------------------------------------------------------------*/
+
+.site-content .wrap,
+.has-sidebar #secondary,
+.has-sidebar:not(.error404) #primary,
+.blog:not(.has-sidebar) #primary article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+.search:not(.has-sidebar) #primary article,
+.error404:not(.has-sidebar) #primary .page-content,
+.error404.has-sidebar #primary .page-content,
+body.page-two-column:not(.archive) #primary .entry-content,
+body.page-two-column #comments {
+  max-width: 100%;
+  width: 100%;
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/*--------------------------------------------------------------
+2.0 Apply Wide, Full and Default Align Styles
+--------------------------------------------------------------*/
+
+body.page-two-column:not(.archive) #primary .entry-header,
+.entry-header,
+.page-header,
+.entry-content > *:not( .alignwide ):not( .alignfull ),
+.post-thumbnail,
+#comments  {
+  max-width: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+
+.alignwide,
+.has-sidebar #secondary,
+.post-navigation {
+  max-width: 75%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignfull {
+  max-width: 100%;
+  width: 100%;  
+}
+
+.post-thumbnail img,
+.alignwide img,
+.alignfull img {
+  width: 100%;
+}
+
+.alignleft img {
+  display: block;
+  float: left;
+  width: 60%;
+  margin-right: 2em;
+}
+
+.alignright img {
+  display: block;
+  float: right;
+  width: 60%;
+  margin-left: 2em;
+}
+
+
+/*--------------------------------------------------------------
+3.0 Custom Color Palettes
+--------------------------------------------------------------*/
+.has-dark-background-color {
+  background-color: #222222
+}
+.has-dark-color {
+  color: #222222
+}
+.has-yellow-background-color {
+  background-color: #f7b733
+}
+.has-yellow-color {
+  color: #f7b733
+}
+.has-blue-background-color {
+  background-color: #1AABDA
+}
+.has-blue-color {
+  color: #1AABDA
+}
+.has-white-background-color {
+  background-color: #ffffff
+}
+.has-white-color {
+  color: #ffffff
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 Media Queries
+--------------------------------------------------------------*/
+
+@media only screen
+  and (max-width: 480px) {
+    .site-content .wrap,
+    .has-sidebar #secondary,
+    .has-sidebar:not(.error404) #primary,
+    .blog:not(.has-sidebar) #primary article,
+    .archive:not(.page-one-column):not(.has-sidebar) #primary article,
+    .search:not(.has-sidebar) #primary article,
+    .error404:not(.has-sidebar) #primary .page-content,
+    .error404.has-sidebar #primary .page-content,
+    body.page-two-column:not(.archive) #primary .entry-content,
+    body.page-two-column #comments  {
+      max-width: 75%;
+      width: 75%;
+    }
+    .alignwide {
+      max-width: 90%;
+      width: 90%;
+    }
+}
