@@ -1,0 +1,85 @@
+/*
+Custom CSS for supporting Gutenberg Blocks in Twenty Seventeen
+Theme URI: https://github.com/zgordon/gutenberg-theming-course
+*/
+
+/** BASIC STYLES (if any) **/
+
+/** QUOTE BLOCKS **/
+/******************/
+
+blockquote.wp-block-quote {
+	border-left: 3px solid #333333;
+	padding: 10px;
+	margin: 20px;
+}
+
+
+blockquote.wp-block-pullquote {
+	border-top: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	margin: 20px;
+}
+
+blockquote.wp-block-pullquote cite {
+	text-align: right;
+	color: #999999;
+}
+
+blockquote.wp-block-pullquote.alignwide,
+blockquote.wp-block-pullquote.alignfull {
+	background: #EFEFEF;
+	padding: 30px;
+}
+
+blockquote.wp-block-pullquote.alignwide p,
+blockquote.wp-block-pullquote.alignfull p {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.entry-content blockquote.wp-block-pullquote.alignright,
+.entry-content blockquote.wp-block-pullquote.alignleft {
+	width: 25%;
+	max-width: 25%;
+	margin-right: 30px;
+    margin-left: 30px;
+}
+
+.entry-content blockquote.wp-block-pullquote.alignright p,
+.entry-content blockquote.wp-block-pullquote.alignleft p {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 500px) {
+	.entry-content blockquote.wp-block-pullquote.alignwide,
+	.entry-content blockquote.wp-block-pullquote.alignfull {
+		padding: 10px;
+	}
+	
+	blockquote.wp-block-pullquote p {
+        font-size: 12px;
+		font-size: 1.2rem;
+	}
+	
+    .entry-content blockquote.wp-block-pullquote.alignwide,
+    .entry-content blockquote.wp-block-pullquote.alignfull,
+    blockquote.wp-block-pullquote.alignwide p,
+    blockquote.wp-block-pullquote.alignfull p {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+/** COVER IMAGE BLOCK **/
+
+
+/** TABLE BLOCK **/
+
+/** BUTTON BLOCK **/
+
+/** EMBED BLOCKS **/
+
+/** COLUMNS BLOCK **/
+
+/** BLOCKS ADDED FROM PLUGINS (if any) **/
