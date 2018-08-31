@@ -110,8 +110,14 @@ blockquote.wp-block-pullquote.alignfull p {
 
 
 /** EMBED BLOCKS **/
+.entry-content .wp-block-embed {
+    max-width: 90%;
+    text-align: center;
+    width: 90%;
+}
 
 /** COLUMNS BLOCK **/
+
 
 /** TABLE BLOCK **/
 
