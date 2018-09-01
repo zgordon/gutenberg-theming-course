@@ -1,0 +1,141 @@
+/*
+Custom CSS for supporting Gutenberg Blocks in Twenty Seventeen
+Theme URI: https://github.com/zgordon/gutenberg-theming-course
+*/
+
+/** BASIC STYLES (if any) **/
+
+/** QUOTE BLOCKS **/
+/******************/
+
+blockquote.wp-block-quote {
+	border-left: 3px solid #333333;
+	padding: 10px;
+	margin: 20px;
+}
+
+
+blockquote.wp-block-pullquote {
+	border-top: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	margin: 20px;
+}
+
+blockquote.wp-block-pullquote cite {
+	text-align: right;
+	color: #999999;
+}
+
+blockquote.wp-block-pullquote.alignwide,
+blockquote.wp-block-pullquote.alignfull {
+	background: #EFEFEF;
+	padding: 30px;
+}
+
+blockquote.wp-block-pullquote.alignwide p,
+blockquote.wp-block-pullquote.alignfull p {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.entry-content blockquote.wp-block-pullquote.alignright,
+.entry-content blockquote.wp-block-pullquote.alignleft {
+	width: 25%;
+	max-width: 25%;
+	margin-right: 30px;
+    margin-left: 30px;
+}
+
+.entry-content blockquote.wp-block-pullquote.alignright p,
+.entry-content blockquote.wp-block-pullquote.alignleft p {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 500px) {
+	.entry-content blockquote.wp-block-pullquote.alignwide,
+	.entry-content blockquote.wp-block-pullquote.alignfull {
+		padding: 10px;
+	}
+	
+	blockquote.wp-block-pullquote p {
+        font-size: 12px;
+		font-size: 1.2rem;
+	}
+	
+    .entry-content blockquote.wp-block-pullquote.alignwide,
+    .entry-content blockquote.wp-block-pullquote.alignfull,
+    blockquote.wp-block-pullquote.alignwide p,
+    blockquote.wp-block-pullquote.alignfull p {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+/** COVER IMAGE BLOCK **/
+.wp-block-cover-image.solid-stripe-text .wp-block-cover-image-text, 
+.wp-block-cover-image.solid-stripe-text h2 {
+    background: #000000;
+    color: #FFFFFF;
+    max-width: none;
+    text-align: center;
+    width: 100%;
+}
+
+.wp-block-cover-image.left-align-full {
+	justify-content: left;
+}
+
+.wp-block-cover-image.left-align-full .wp-block-cover-image-text, 
+.wp-block-cover-image.left-align-full h2 {
+	font-size: 4em;
+	max-width: 350px;
+	margin: 0;
+	text-align: left;		
+}
+
+/** BUTTON BLOCK **/
+.wp-block-button.primary a.wp-block-button__link {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.wp-block-button.secondary a.wp-block-button__link {
+    font-size: 1.6rem;
+    background: none !important;
+    border-bottom: 4px solid #880000;
+    border-radius: 0;
+    color: #333333 !important;
+}
+
+
+/** EMBED BLOCKS **/
+.entry-content .wp-block-embed {
+    max-width: 90%;
+    text-align: center;
+    width: 90%;
+}
+
+/** COLUMNS BLOCK **/
+.wp-block-columns {
+
+}
+
+.wp-block-column {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .wp-block-columns {
+        display: block;
+    }
+
+    .wp-block-column {
+        margin: 10px 0;
+    }
+}
+
+
+/** TABLE BLOCK **/
+
+/** BLOCKS ADDED FROM PLUGINS (if any) **/
