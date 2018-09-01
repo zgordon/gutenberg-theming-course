@@ -117,6 +117,23 @@ blockquote.wp-block-pullquote.alignfull p {
 }
 
 /** COLUMNS BLOCK **/
+.wp-block-columns {
+
+}
+
+.wp-block-column {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .wp-block-columns {
+        display: block;
+    }
+
+    .wp-block-column {
+        margin: 10px 0;
+    }
+}
 
 
 /** TABLE BLOCK **/
