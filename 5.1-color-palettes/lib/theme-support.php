@@ -12,7 +12,7 @@ function theme_support() {
     add_theme_support( 'align-wide' );
 
     // Add support for custom color palettes
-    add_theme_support( 'editor-color-palette',
+    add_theme_support( 'editor-color-palette', [
         [
             'name'  => esc_html__( 'JS Yellow', 'gutenbergtheme' ),
             'slug'  => 'yellow',
@@ -33,6 +33,6 @@ function theme_support() {
             'slug'  => 'white',
             'color' => '#ffffff',
         ]
-    );
+    ]);
 
 }
