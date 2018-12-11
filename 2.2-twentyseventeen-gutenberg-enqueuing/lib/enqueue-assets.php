@@ -38,7 +38,7 @@ function enqueue_assets() {
 	wp_enqueue_style(
 		'gbtheming-blocks-css',
 		get_stylesheet_directory_uri() . '/css/blocks.css',
-		[ 'wp-blocks' ],
+		null,
         time() // Change for production
 	);
 
@@ -59,7 +59,7 @@ function enqueue_block_editor_assets() {
 	wp_enqueue_style(
 		'gbtheming-editor-css',
 		get_stylesheet_directory_uri() . '/css/editor.css',
-		[ 'wp-blocks' ],
+		null,
         time() // Change for production
     );
 
