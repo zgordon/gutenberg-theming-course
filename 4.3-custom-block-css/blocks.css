@@ -72,8 +72,8 @@ blockquote.wp-block-pullquote.alignfull p {
 }
 
 /** COVER IMAGE BLOCK **/
-.wp-block-cover-image.solid-stripe-text .wp-block-cover-image-text, 
-.wp-block-cover-image.solid-stripe-text h2 {
+.wp-block-cover.solid-stripe-text .wp-block-cover-text, 
+.wp-block-cover.solid-stripe-text h2 {
     background: #000000;
     color: #FFFFFF;
     max-width: none;
@@ -81,12 +81,12 @@ blockquote.wp-block-pullquote.alignfull p {
     width: 100%;
 }
 
-.wp-block-cover-image.left-align-full {
+.wp-block-cover.left-align-full {
 	justify-content: left;
 }
 
-.wp-block-cover-image.left-align-full .wp-block-cover-image-text, 
-.wp-block-cover-image.left-align-full h2 {
+.wp-block-cover.left-align-full .wp-block-cover-text, 
+.wp-block-cover.left-align-full h2 {
 	font-size: 4em;
 	max-width: 350px;
 	margin: 0;

@@ -36,7 +36,7 @@ function block_templates( $args, $post_type ) {
 				'core/separator'
 			],			
 			[
-				'core/cover-image', [
+				'core/cover', [
 					'align' => 'full',
 				]
 			],
@@ -61,7 +61,7 @@ function block_templates( $args, $post_type ) {
 	
 		$args[ 'template' ] = [
 			[
-				'core/cover-image', [
+				'core/cover', [
 					'align' => 'full',
 				]
 			],

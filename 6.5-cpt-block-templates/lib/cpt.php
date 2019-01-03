@@ -44,7 +44,7 @@ function custom_post_types() {
 				'core/separator'
 			],			
 			[
-				'core/cover-image', [
+				'core/cover', [
 					'align' => 'full',
 				]
 			],
